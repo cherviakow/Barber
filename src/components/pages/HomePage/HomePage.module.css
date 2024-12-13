@@ -1,0 +1,28 @@
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 10%;
+  }
+  
+  .main .mainLeft {
+    width: 100%;
+    font-size: 60px;
+    color: aliceblue;
+  }
+  
+  .main .mainRight {
+    width: 100%;
+    font-size: 30px;
+    color: aliceblue;
+  }
+  
+  @media (max-width: 768px) {
+    .main {
+      grid-template-columns: 1fr;
+    }
+    .mainRight{
+      font-size: 10px;
+    }
+  }
+  

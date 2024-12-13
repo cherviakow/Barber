@@ -1,0 +1,17 @@
+ ul.nav{
+    display: flex;
+    margin-right: 29px;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    
+  }
+
+li{
+    display: inline;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+   
+  }
