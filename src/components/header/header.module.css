@@ -1,19 +1,20 @@
 .header{
     position:absolute;
-    top: 0px;
+   height: 100px;
+   width: 100%;
     display: flex;
-    justify-content: center;
-    margin-right: 20px;
+    padding-left: 20px;
+    
+   
 
 
+  
+  }
+  .barberhood{
+    color: rgb(236, 236, 236);
+    margin-top: 30px;
   }
 
-header ul.nav{
-  display: flex;
-  margin-right: 29px;
-  justify-content: center;
-  align-items: center;
-}
 
 
 li{
@@ -22,10 +23,15 @@ li{
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  color: aliceblue;
+  
 }
 
-
+.header > :nth-child(3) {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+ 
+}
 
 
 

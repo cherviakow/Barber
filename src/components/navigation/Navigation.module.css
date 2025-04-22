@@ -1,17 +1,18 @@
- ul.nav{
-    display: flex;
-    margin-right: 29px;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-    
-  }
+.nav{
+  margin-top: 20px;
+}
 
-li{
-    display: inline;
-    margin-left: 20px;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-   
-  }
+.navLink {
+  color: white;
+  font-size: 40px;
+
+  text-decoration: none;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.active {
+  color: #e91e63;
+  text-decoration: underline;
+
+}

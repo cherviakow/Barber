@@ -1,3 +1,8 @@
 .backgroundStyl{
   border-style: double;
 }
+
+*{
+  margin: 0;
+  padding: 0;
+}

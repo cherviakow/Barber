@@ -1,30 +1,31 @@
 import css from "./Navigation.module.css";
-import { Routes, Route, NavLink } from "react-router";
-import { Team } from "../pages/Team/Team";
-import { HomePage } from "../pages/HomePage/HomePage";
-import { Pricing } from "../pages/Pricing/Pricing";
+import { NavLink } from "react-router-dom";
+
 
 export default function Navigation() {
   return (
     <>
       <ul className={css.nav}>
         <li>
-          <NavLink to="/home">Home</NavLink>
+          <NavLink to="/home"
+          className={({ isActive }) =>
+            isActive ? `${css.navLink} ${css.active}` : css.navLink
+          }>Home</NavLink>
         </li>
         <li>
-          <NavLink to="/team">Team</NavLink>
+          <NavLink to="/team"
+          className={({ isActive }) =>
+            isActive ? `${css.navLink} ${css.active}` : css.navLink
+          }>Team</NavLink>
         </li>
         <li>
-          <NavLink to="/pricing">Pricing</NavLink>
+          <NavLink to="/pricing"
+          className={({ isActive }) =>
+            isActive ? `${css.navLink} ${css.active}` : css.navLink
+          }>Pricing</NavLink>
         </li>
       </ul>
 
-      <Routes>
-        <Route path="/home" element={<HomePage />} />
-        <Route path="/team" element={<Team />} />
-        <Route path="/pricing" element={<Pricing />} />
-        {/* <Route path="*" element={<div>Not found page</div>}/> */}
-      </Routes>
     </>
   );
 }

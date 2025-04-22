@@ -1,9 +1,23 @@
 import image from '../../../img/Pricing.png'
+import css from "./Pricing.module.css"
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 
-const Pricing = () => {
+export default function Pricing(){
+
+
+      useEffect(()=>{
+        AOS.init({ duration: 2000, once: true });
+      },[]);
+    
+
     return (
-        <img src={image} alt="Pricing" />
+        <div className={css.wrapper} >
+
+            <img src={image} data-aos="zoom-in" className={css.imageImg}  alt="Pricing" />
+        </div>
+        
     )
 };
 
-export {Pricing}; 

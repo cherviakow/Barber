@@ -1,0 +1,16 @@
+.imageImg{
+    display: block;
+    margin: 0 auto;
+    max-width: 70%;
+    height: auto ;
+    border-radius: 20px;
+
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); 
+    box-sizing: border-box;
+}
