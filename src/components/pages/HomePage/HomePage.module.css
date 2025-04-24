@@ -23,5 +23,23 @@
   color: aliceblue;
   text-align: left;
 }
+.bookBtn{
+  width: 300px;
+  height: 50px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  margin-left: 15%;
+  background-color: lch(86.85% 0.72 18.65);
+  transition: background-color 0.5s ease, transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.bookBtn:hover{
+  background-color: rgb(132, 82, 18);
+  color: aliceblue;
+  transform: scale(1.05);
+}
+
 
 

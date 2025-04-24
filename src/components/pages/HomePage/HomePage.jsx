@@ -1,12 +1,13 @@
 import css from './HomePage.module.css'
-// import BookingBlock from '../../booking/BookingBlock';
+import BookingBlock from '../../booking/BookingBlock';
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 
 
-const HomePage = () => {
+export default function HomePage (){
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(()=>{
     AOS.init({ duration: 2000, once: true });
@@ -25,9 +26,11 @@ const HomePage = () => {
                 face the world with renewed self-assurance.
               </p>
             </div>
-{/* <BookingBlock/> */}
+            <button className={css.bookBtn} data-aos="fade-right" onClick={()=> setIsModalOpen(true)}>Book your appointment</button>
+            <BookingBlock isOpen={isModalOpen} onClose={()=>setIsModalOpen(false)}/>
+
           </>
   )
 };
 
-export {HomePage}; 
+
