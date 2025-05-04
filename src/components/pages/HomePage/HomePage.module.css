@@ -41,5 +41,23 @@
   transform: scale(1.05);
 }
 
+@media (max-width:768px) {
+  .main .mainLeft{
+    font-size: 30px;
+    margin-top: 2%;
+  }
+  .main .mainRight{
+    margin-top: 25%;
+    font-size: 22px
+  }
+  .bookBtn{
+    width: 150px;
+    height: 40px;
+    font-size: 13px;
+    margin-left: 8%;
+    margin-top: -100px;
+  }
+  
+}
 
 

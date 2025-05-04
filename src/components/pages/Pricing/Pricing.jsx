@@ -8,7 +8,7 @@ export default function Pricing(){
 
 
       useEffect(()=>{
-        AOS.init({ duration: 2000, once: true });
+        AOS.init({ duration: 1500, once: true });
       },[]);
     
 

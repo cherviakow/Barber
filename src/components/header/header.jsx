@@ -6,7 +6,7 @@ export default function Header () {
   return (
     <>
       <header className={css.header}>
-        <img src={barberpin} alt="" />
+        <img src={barberpin} className={css.barberpin} alt="" />
         <h1 className={css.barberhood}>Barberhood</h1>
         <Navigation/>
 

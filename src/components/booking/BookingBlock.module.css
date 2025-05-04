@@ -5,15 +5,37 @@
   border-radius: 10px;
   height: 500px;
   width: 500px;
-  background-color: rgba(153, 144, 144, 0.6);
+  background-image: url('../../img/backgr.png');
   z-index: 1000;
   transform: translateY(-30px);
   opacity: 0;
-  animation: slideIn 0.4s ease forwards;
+  animation: slideIn 0.2s ease forwards;
+}
+.bookBlock{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  
+}
+.booking{
+  text-align: left;
+  margin-bottom: 5px;
+  color: rgb(102, 102, 102);
+}
+
+.closeBtn{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 8px;
+  z-index: 10;
 }
 
 label {
-  color: rgb(160, 160, 160);
+  color: rgb(116, 114, 114);
  padding: 10px;
   font-size: 20px;
   display: grid;
@@ -25,7 +47,7 @@ input {
   width: 300px;
   height: 30px;
   border-radius: 10px;
-  text-align: center;
+padding-left: 10px;
 }
 
 input::placeholder {
@@ -38,20 +60,21 @@ input::placeholder {
 }
 
 h2 {
-  color: aliceblue;
+  color: rgb(102, 102, 102);
+  margin-bottom: 15px;
 }
 
 select {
-  margin-top: 10px;
-  width: 300px;
+  
+  width: 315px;
   height: 30px;
   border-radius: 10px;
 }
 
 .icon{
   position: absolute;
-  top: 15px;
-  right: 30px;
+  top: 10px;
+  right: 10px;
   font-size: 30px;
   color: rgba(0, 0, 0, 0.654);
  cursor: pointer;
@@ -59,12 +82,12 @@ select {
 }
 .icon:hover {
  
-  color: rgb(132, 82, 18);
+  color: rgb(162, 12, 34);
 }
 
 .submitBtn {
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 20px;
   width: 200px;
   height: 35px;
   border-radius: 10px;
@@ -109,4 +132,16 @@ select {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+@media (max-width: 768px) {
+  .container{
+    height: 500px;
+    width: 400px;
+  }
+  .icon{
+    top: 23px;
+    right: 10px;
+  }
+
 }

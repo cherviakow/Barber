@@ -14,3 +14,8 @@
     height: calc(100vh - 80px); 
     box-sizing: border-box;
 }
+@media (max-width:768px) {
+    .imageImg{
+        max-width: 550px;
+    }
+}

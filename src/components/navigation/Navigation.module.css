@@ -16,3 +16,10 @@
   text-decoration: underline;
 
 }
+
+@media (max-width:768px) {
+  .navLink{
+    font-size: 25px;
+    margin-top: 35px;
+  }
+}

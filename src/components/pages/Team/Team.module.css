@@ -1,0 +1,49 @@
+.teamBlock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    height: calc(100vh - 80px); 
+    flex: 1 1 auto;
+
+}
+.barberCard{
+    text-align: center;
+    
+}
+
+.barber{
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: block;
+    
+
+    
+}
+
+.name{
+    margin-top: 40px;
+    color: aliceblue;
+    font-size: 30px;
+}
+
+@media (max-width:768px) {
+    .teamBlock{
+        gap: 5px;
+    }
+    .barber{
+        width: 150px;
+
+    }
+}
+@media (max-width:1280) {
+    .barber{
+        width: 150px;
+
+    }
+}

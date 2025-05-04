@@ -43,76 +43,86 @@ export default function BookingBlock({ isOpen, onClose, children }) {
 
     if (valideForm()) {
       console.log("Complite", formData);
+      onclose();
     }
   };
 
   return (
     <div className={css.over}>
       <div className={css.container} onClick={onClose}>
-       
         <form
           className={css.formContainer}
           onSubmit={handleSubmit}
           onClick={(e) => e.stopPropagation()}
         >
-            <h2>Book your appointment</h2>
-          <button onClick={onClose}><IoMdClose className={css.icon} /></button>
+          <h2>Book your appointment</h2>
+          <button onClick={onClose} className={css.closeBtn}>
+            <IoMdClose className={css.icon} />
+          </button>
           {children}
+          <div className={css.bookBlock}>
+            <span className={css.booking}>Name:</span>
 
-          <label htmlFor="Name"></label>
-          <input
-            type="name"
-            placeholder="Name"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-          />
+            <input
+              type="name"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+            />
+          </div>
+          <div className={css.bookBlock}>
+            <span className={css.booking}>Email:</span>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+            />
+          </div>
 
-          <label htmlFor="email"></label>
-          <input
-            type="email"
-            placeholder="Email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-          />
+          <div className={css.bookBlock}>
+            <span className={css.booking}>Phone number:</span>
+            <input
+              type="phoneNumber"
+              id="phoneNumber"
+              name="phoneNumber"
+              value={formData.phoneNumber}
+              onChange={handleChange}
+            />
+          </div>
 
-          <label htmlFor="phoneNumber"></label>
-          <input
-            type="phoneNumber"
-            placeholder="Phone number"
-            id="phoneNumber"
-            name="phoneNumber"
-            value={formData.phoneNumber}
-            onChange={handleChange}
-          />
+          <div className={css.bookBlock}>
+            <span className={css.booking}>Date:</span>
+            <input
+              type="date"
+              id="date"
+              name="date"
+              value={formData.date}
+              onChange={handleChange}
+            />
+            {errors.date && console.log(errors.date)}
+          </div>
 
-          <label htmlFor="Date"></label>
-          <input
-            type="date"
-            id="date"
-            name="date"
-            value={formData.date}
-            onChange={handleChange}
-          />
-          {errors.date && console.log(errors.date)}
+          <div className={css.bookBlock}>
+            <span className={css.booking}>Select services:</span>
 
-          <label htmlFor="services"></label>
-          <select
-            type="services"
-            id="services"
-            name="services"
-            value={formData}
-            onChange={handleChange}
-          >
-            <option value="">Select services</option>
-            <option value="Haircut">Haircut</option>
-            <option value="Bear trim / cleanup	">Bear trim / cleanup</option>
-            <option value="Haircut and beard">Haircut and beard</option>
-            <option value="Kids haircut">Kids haircut</option>
-          </select>
+            <select
+              type="services"
+              id="services"
+              name="services"
+              className={css.selectService}
+              value={formData}
+              onChange={handleChange}
+            >
+              <option value="">Select services</option>
+              <option value="Haircut">Haircut</option>
+              <option value="Bear trim / cleanup	">Bear trim / cleanup</option>
+              <option value="Haircut and beard">Haircut and beard</option>
+              <option value="Kids haircut">Kids haircut</option>
+            </select>
+          </div>
 
           <div>
             <button className={css.submitBtn} type="submit">
