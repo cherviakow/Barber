@@ -16,7 +16,11 @@ export default function HomePage (){
   return (
     <>
        <div className={css.main}>
-              <p className={css.mainLeft} data-aos="fade-right">Unlocking Confidence, One Haircut at a Time</p>
+        <div className={css.left}>
+        <p className={css.mainLeft} data-aos="fade-right">Unlocking Confidence, One Haircut at a Time</p>
+        <button className={css.bookBtn} data-aos="fade-right" onClick={()=> setIsModalOpen(true)}>Book your appointment</button>
+        </div>
+              {/* <p className={css.mainLeft} data-aos="fade-right">Unlocking Confidence, One Haircut at a Time</p> */}
               <p className={css.mainRight} data-aos="fade-left">
                 At The Syndicate, we believe that true confidence starts with how you
                 feel about yourself. Our master barbers use time-honored techniques,
@@ -26,7 +30,7 @@ export default function HomePage (){
                 face the world with renewed self-assurance.
               </p>
             </div>
-            <button className={css.bookBtn} data-aos="fade-right" onClick={()=> setIsModalOpen(true)}>Book your appointment</button>
+            {/* <button className={css.bookBtn} data-aos="fade-right" onClick={()=> setIsModalOpen(true)}>Book your appointment</button> */}
             <BookingBlock isOpen={isModalOpen} onClose={()=>setIsModalOpen(false)}/>
 
           </>
