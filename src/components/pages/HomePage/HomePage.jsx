@@ -22,7 +22,7 @@ export default function HomePage (){
         </div>
               {/* <p className={css.mainLeft} data-aos="fade-right">Unlocking Confidence, One Haircut at a Time</p> */}
               <p className={css.mainRight} data-aos="fade-left">
-                At The Syndicate, we believe that true confidence starts with how you
+                At The Barberhood, we believe that true confidence starts with how you
                 feel about yourself. Our master barbers use time-honored techniques,
                 passed down through generations, to provide more than just a
                 haircut—we offer a transformation. Each visit is designed to enhance

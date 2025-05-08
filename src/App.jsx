@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import HomePage from "./components/pages/HomePage/HomePage";
 import { Team } from "./components/pages/Team/Team";
 import Pricing from "./components/pages/Pricing/Pricing";
+import Footer from "./components/footer/Footer";
 // import { useState } from "react";
 // import MainPage from "./components/mainPage/MainPage";
 // import BookingBlock from "./components/booking/BookingBlock";
@@ -30,18 +31,23 @@ backgroundAttachment: "fixed",
 
   return (
     <> 
-      <div  style={backgroundStyle}>
+      <div className="wrap"  style={backgroundStyle}>
       
     
        
        
         <Header />
-        <Routes>
+        <div className="content">
+<Routes>
         <Route path="/home" element={<HomePage />} />
         <Route path="/team" element={<Team />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="*" element={<div>Not found page</div>}/>
       </Routes>
+
+        </div>
+        
+      <Footer />
       {/* <button onClick={()=> setIsModalOpen(true)}>OPEN!!!!!</button> */}
 
 {/* <BookingBlock isOpen={isModalOpen} onClose={()=>setIsModalOpen(false)}/> */}

@@ -44,6 +44,8 @@
 @media (max-width:1400px) {
     .barber{
         width: 150px;
+        height: 400px;
+        margin-top: 30%;
 
     }
 }

@@ -49,7 +49,7 @@ export default function BookingBlock({ isOpen, onClose, children }) {
 
   return (
     <div className={css.over}>
-      <div className={css.container} onClick={onClose}>
+      <div className={css.container}  onClick={onClose}>
         <form
           className={css.formContainer}
           onSubmit={handleSubmit}
