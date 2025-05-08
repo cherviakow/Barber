@@ -17,6 +17,7 @@ function App() {
       <div className="wrapImg" >
         <Header />
         <div className="content">
+         
           <Routes>
             <Route path="/home" element={<HomePage />} />
             <Route path="/team" element={<Team />} />
