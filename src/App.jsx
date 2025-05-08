@@ -10,48 +10,21 @@ import Footer from "./components/footer/Footer";
 // import MainPage from "./components/mainPage/MainPage";
 // import BookingBlock from "./components/booking/BookingBlock";
 
-
-
-
-
-
 function App() {
-  const backgroundStyle = {
-    height: "100vh",
-    backgroundImage: 'url("./img/MainPictures.jpg")',
-    backgroundSize: "cover",
-backgroundAttachment: "fixed",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    backgroundColor: "rgba(0, 0, 0, 0.5)",
-    
-    
-  };
-  // const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <> 
-      <div className="wrap"  style={backgroundStyle}>
-      
-    
-       
-       
+    <>
+      <div className="wrapImg" >
         <Header />
         <div className="content">
-<Routes>
-        <Route path="/home" element={<HomePage />} />
-        <Route path="/team" element={<Team />} />
-        <Route path="/pricing" element={<Pricing />} />
-        <Route path="*" element={<div>Not found page</div>}/>
-      </Routes>
-
+          <Routes>
+            <Route path="/home" element={<HomePage />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/pricing" element={<Pricing />} />
+            <Route path="*" element={<div>Not found page</div>} />
+          </Routes>
         </div>
-        
-      <Footer />
-      {/* <button onClick={()=> setIsModalOpen(true)}>OPEN!!!!!</button> */}
-
-{/* <BookingBlock isOpen={isModalOpen} onClose={()=>setIsModalOpen(false)}/> */}
-
+        <Footer />
       </div>
     </>
   );

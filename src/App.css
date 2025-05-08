@@ -7,10 +7,17 @@
   padding: 0;
 }
 
-.wrap{
+.wrapImg{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  height: 100vh;
+  background-image: 'url("./img/MainPictures.jpg")';
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .content{
   flex: 1; 
